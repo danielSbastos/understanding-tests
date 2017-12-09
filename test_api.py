@@ -6,26 +6,26 @@ class Post():
 
 	def __init__(self, text):
 		self.text = text
-		self.post_size = self.define_post_size()
 
 	def define_post_size(self):
 		if len(self.text) <= 100:
-			return 'small'
+			self.size = 'small'
 		elif 100 < len(self.text) <= 500:
-			return 'medium'
-		return 'big'
+			self.size = 'medium'
+		else:
+			self.size = 'big'
 
 	def publish_post(self):
-		if self.post_size == 'small':
+		self.define_post_size()
+		if self.size == 'small':
 			return
 
 		response = requests.post(
 			"https://jsonplaceholder.typicode.com/posts",
 			headers={'content-type': 'application/json'},
-			data=json.dumps({'size': self.define_post_size(), 'text': self.text})
+			data=json.dumps({'size': self.size, 'text': self.text})
 		)
 		return response
-
 
 # Test
 
