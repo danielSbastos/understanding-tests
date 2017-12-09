@@ -25,6 +25,7 @@ def test_write_file(mock_open):
 	file = FileActions('example1.txt').write_file(['Oi', 'Me chamo Daniel'])
 
 	mock_open.assert_called_with('example1.txt', "w+")
+	assert 'example1.txt' not in os.listdir(os.getcwd())
 
 
 @mock.patch('builtins.open')
