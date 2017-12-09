@@ -23,5 +23,3 @@ def test_with_mock():
 
     assert str(jlle) == 'Neighborhood: América, Street: Max Colin'
     street.get_description.assert_called_once_with()
-
-
