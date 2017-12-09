@@ -13,5 +13,3 @@ def test_with_dummy():
     jlle = Joinville('América', street)
 
     assert jlle.POPULATION == 569645
-
-

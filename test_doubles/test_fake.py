@@ -25,5 +25,3 @@ def test_with_fake():
     jlle = Joinville('América', street)
 
     assert str(jlle) == 'Neighborhood: América, Street: Max Colin'
-
-

@@ -21,5 +21,3 @@ def test_with_stub():
     jlle = Joinville('América', street)
 
     assert str(jlle) == 'Neighborhood: América, Street: Max Colin'
-
-

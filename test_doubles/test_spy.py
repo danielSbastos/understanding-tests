@@ -27,12 +27,3 @@ def test_with_spy():
     str(jlle_2)
 
     assert street.get_description.call_count == 2
-
-
-
-
-
-
-
-
-
