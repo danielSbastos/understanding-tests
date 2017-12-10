@@ -2,3 +2,4 @@ pytest==2.9.2
 pep8==1.7.0
 requests==2.11.1
 requests_mock==1.4.0
+doubles==1.2.1
