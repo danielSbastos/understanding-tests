@@ -7,6 +7,7 @@ class StreetFake:
     def get_description(self):
         return self.STREET
 
+
 def test_with_fake():
     street = StreetFake()
     jlle = Joinville('América', street)

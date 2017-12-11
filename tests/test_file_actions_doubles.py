@@ -12,6 +12,7 @@ def test_write_file():
     file.open_file()
     file.write_file(['Oi', 'Me chamo Daniel'])
 
+
 def test_write_and_remove_file():
     file = FileActions('example1.txt')
 
@@ -23,6 +24,7 @@ def test_write_and_remove_file():
     file.open_file()
     file.write_file(['Oi', 'Me chamo Daniel'])
     file.try_to_remove_file()
+
 
 def test_write_and_dont_remove_file():
     file = FileActions('example1.txt')
