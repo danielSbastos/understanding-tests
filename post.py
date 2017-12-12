@@ -7,12 +7,10 @@ class Post():
 
     def __init__(self, text):
         self.text = text
-        self.has_accepted_size = self.check_minumum_size((len(self.text)))
+        self.has_accepted_size = self.has_minumum_size((len(self.text)))
 
-    def check_minumum_size(self, lenght):
-        if lenght < self.MINIMUM_LENGHT:
-            return False
-        return True
+    def has_minumum_size(self, length):
+        return length > self.MINIMUM_LENGHT
 
     def publish_post(self):
         if self.has_accepted_size:

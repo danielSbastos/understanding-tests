@@ -8,6 +8,7 @@ def test_write_file(mock_open, mock_write):
     file = FileActions('example1.txt')
     file.open_file()
     file.write_file(['Oi', 'Me chamo Daniel'])
+    file.close_file()
 
     mock_open.assert_called_with('example1.txt', 'w+')
     mock_write.assert_called_with(['Oi', 'Me chamo Daniel'])
@@ -20,6 +21,7 @@ def test_write_and_delete_file(mock_open, mock_os, mock_write):
     file = FileActions('example1.txt')
     file.open_file()
     file.write_file(['Oi', 'Me chamo Daniel'])
+    file.close_file()
     file.try_to_remove_file()
 
     mock_open.assert_called_with('example1.txt', 'w+')
@@ -34,6 +36,7 @@ def test_write_and_dont_delete_file(mock_open, mock_os, mock_write):
     file = FileActions('example1.txt')
     file.open_file()
     file.write_file(['Oi', 'Me chamo Daniel'])
+    file.close_file()
 
     mock_os.path.isfile.return_value = False
 
