@@ -29,11 +29,11 @@ This repository contains 4 `*.py` files in the root dir that will be used in ord
     - [test_joinville_spy.py](https://github.com/danielSbastos/understanding-tests/blob/master/tests/test_joinville_spy.py) explains test spies.
     - [test_joinville_mock.py](https://github.com/danielSbastos/understanding-tests/blob/master/tests/test_joinville_mock.py) explains test mocks.
 
-- [post.py](https://github.com/danielSbastos/understanding-tests/blob/master/post.py) helps us understand how to mock http requests in unit tests.
+- [post.py](https://github.com/danielSbastos/understanding-tests/blob/master/post.py) helps us understand how to mock http requests in unit tests with the lib requests_mock, https://github.com/openstack/requests-mock.
     - [test_post.py](https://github.com/danielSbastos/understanding-tests/blob/master/tests/test_post.py) contains tests that uses mocks to test HTTP requests.
 
 - [user.py](https://github.com/danielSbastos/understanding-tests/blob/master/user.py) contains a simple class with user functionalities that evidences that test doubles are not needed all the time when tests are done.
-    - [test_user.py](https://github.com/danielSbastos/understanding-tests/blob/master/tests/test_user.py) tests `user.py` with no test doubles.<
+    - [test_user.py](https://github.com/danielSbastos/understanding-tests/blob/master/tests/test_user.py) tests `user.py` with no test doubles.
 
 ## Code Quality
 
