@@ -2,7 +2,7 @@ import os
 
 # TEST
 
-class FileActions():
+    class FileActions():
 
     def __init__(self, file_name):
         self.file_name = file_name
