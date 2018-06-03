@@ -1,7 +1,8 @@
 import os
 
+# TEST
 
-class FileActions():
+    class FileActions():
 
     def __init__(self, file_name):
         self.file_name = file_name
@@ -10,11 +11,11 @@ class FileActions():
         file = open(self.file_name, "w+")
         self.file = file
 
-    def write_file(self, texts):
+   def write_file(self, texts):
         for text in texts:
             self.file.write(text + "\n")
 
-    def close_file(self):
+        def close_file(self):
         self.file.close()
 
     def try_to_remove_file(self):

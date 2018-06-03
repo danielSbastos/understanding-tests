@@ -3,7 +3,7 @@ from doubles import allow, expect
 from understanding_tests.file_actions import FileActions
 
 
-def test_write_file():
+    def test_write_file():
     file = FileActions('example1.txt')
 
     expect(file).open_file.with_no_args()
